@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block titol %} Llista de llibres {% endblock %}
+
+{% block contingut %}
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Afegir un llibre</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Llibres</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Títol</th>
+                    <th>Imatge</th>
+                    <th>Descripció</th>
+                    <th>Accions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Django con Python</td>
+                    <td>foto.jpg</td>
+                    <td>Llibre sobre el framework Django</td>
+                    <td> 
+                        <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>
+                        | 
+                        <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
+
+{% endblock %}
